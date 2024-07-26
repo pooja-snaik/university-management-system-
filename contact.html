@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - University Name</title>
+    <style>
+        body {
+            font-family: cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            background-image: url("image.jpg");
+            background-size: cover;
+            filter: blur(10px); /* Adjust the blur value */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .container {
+            width: 70%;
+            padding: 20px;
+            background-color: rgba(51, 51, 51, 0.8); /* Adjusted background color with transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .home-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s, text-decoration 0.3s;
+            text-decoration: none; /* Remove underline */
+        }
+
+        .home-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        /* ... Other CSS rules ... */
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <p>For any inquiries, please contact us:</p>
+            <p>Phone: +123-456-7890</p>
+            <p>Email: contact@mangaloreuniversity.edu</p>
+            <p>Address: 123 University Street, Cityville, Country</p>
+        </div>
+        <div class="center-align">
+            <a href="home.html" class="home-button">Home</a>
+        </div>
+    </div>
+</body>
+</html>
