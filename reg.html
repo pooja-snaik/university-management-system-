@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Course Registration</title>
+    <style>
+       body {
+            font-family: cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            background-image: url("image.jpg");
+            background-size: cover;
+            filter: blur(10px); /* Adjust the blur value */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: rgba(51, 51, 51, 0.8); /* Adjusted background color with transparency */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+            width: 80%; /* Adjust the form width */
+            max-width: 400px; /* Limit the form width for readability */
+            color: #fff;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+       select {
+    width: 100%;
+    padding: 10px 2px; /* Adjust the horizontal (x) padding value */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+
+.home-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s, text-decoration 0.3s;
+            text-decoration: none; /* Remove underline */
+        }
+
+        .home-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+
+        /* ... Other CSS rules ... */
+
+    </style>
+</head>
+<body>
+    
+    <form action="register.php" method="post">
+<h1>Course Registration</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="course">Select College:</label>
+        <select id="course" name="course" required>
+            <option value="St. Aloysius College">St. Aloysius College</option>
+            <option value="St. Joseph engineering College">St. Joseph engineering College</option>
+            <option value="Canara college">Canara college</option>
+            <option value="Karavali college">Karavali college</option>
+            <option value="Alvas Institute of engineering and technology">Alvas Institute of engineering and technology</option>
+            <option value="Srinivas Institute of technology">Srinivas Institute of technology</option>
+            <option value="Mahatma Gandhi Memorial College">Mahatma Gandhi Memorial College</option>
+            <option value="Poorna Prajna College">Poorna Prajna College</option>
+            <option value="Amrutha college of Education">Amrutha college of Education</option>
+            <option value="Rosario College">Rosario College</option>
+            <option value="MSNIM Manel Srinivasa Nayak Institute of Management">MSNIM Manel Srinivasa Nayak Institute of Management</option>
+            
+        </select>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+            <option value="BCA">BCA</option>
+            <option value="BCOM">BCOM</option>
+            <option value="BBA">BBA</option>
+            <option value="BA">BA</option>
+            <option value="BSC">BSC</option>
+        </select>
+
+      
+        
+           <div class="center-align" style="display: flex; justify-content: space-between;">
+    <input type="submit" value="Register">
+    <a href="home.html" class="home-button">Home</a>
+</div>
+
+
+    </form>
+          
+    
+</body>
+</html>
