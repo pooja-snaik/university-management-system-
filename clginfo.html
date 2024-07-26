@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colleges</title>
+    <style>
+        body {
+            font-family: cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            background-image: url("image.jpg");
+            background-size: cover;
+            filter: blur(10px); /* Adjust the blur value */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+
+        .container {
+            width: 70%;
+            padding: 20px;
+            background-color: rgba(51, 51, 51, 0.8); /* Adjusted background color with transparency */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .college {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+         .home-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s, text-decoration 0.3s;
+            text-decoration: none; /* Remove underline */
+            margin-top: 20px;
+        }
+
+        .home-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        /* ... Other CSS rules ... */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Offered Colleges</h1>
+        <div class="college">
+            <h3>St.Aloysius college</h3>
+            <p>This is one of the best colleges in Mangalore offering many courses. Located in Mangalore.</p>
+        </div>
+<div class="college">
+    <h3>St.Joseph engineering college </h3>
+    <p>This is the only catholic engineering institute in Mangalore ,it is one of the highly reputed institution in the region.
+         <br>Located in vamanjoor,Mangalore.</p>
+</div>
+<div class="college"> 
+    <h3>Canara College</h3>
+    <p>This college has managed educational institutions since 1891 provide 3 years of degree courses.<br>
+      Located in Kodailbail,Mangalore</p>
+</div>
+<div class="college">      
+    <h3> Karavali college</h3>
+    <p>Karavali institute of technology (KIT)is the premier institute established by the GR education trust.<br>
+    Located in near Kottara ciowki junction,Manglore</p>
+</div> 
+<div class="college">    
+    <h3>Alvas Institute of engineering and technology</h3>
+    <p>This is the premier engineering collgee ,established in 2008 .<br>
+    Located in Moodabidri,Mangalore</p>
+</div>
+<div class="college">   
+    <h3>Srinivas Institute of technology</h3>
+    <p>This is a top premier engineering institute in Mangalore,established in 2006<br>
+    Located in Mukka,Mangalore</p>
+</div>
+<div class="college">  
+    <h3>Mahatma Gandhi Memorial College</h3>
+    <p>MGM college is run by the Academy of General Education,Manipal.The college emphasizes on sports and other extra curricular activities.MGM is also known as cultural hub in udupi.<br>
+    Located in Kunjibettu,udupi</p>
+</div>
+<div class="college">    
+    <h3>Poorna Prajna College</h3>
+   <p> Ppc college is run by the Admar mutt Educational trust.<br>
+   Located in udupi</p>
+</div>   
+<div class="college">
+    <h3>Amrutha college of Education</h3>
+    <p>Accredited with the highest possible "A++" grade by   NAAC,Amrutha offers more then 250 UG ,PG,and Ph.D programs in engineering,management, and medical science including ayurveda ,life science,phisical science , agreculture science ,arts and humanities and social and behavioral science.<br>
+    Located in Shanthi nagar ,Mangalore</P>
+</div>
+<div class="college">
+    <h3>Rosario college</h3>
+    <p>Rosario college of management studies is a premier institute established in 2009.Institute offers degree courses including 2 UG courses .This institute offers good infrastructer like auditorium , cafetaria,gym,hospital/ medical facilities ,hostel,labs,library,sports complex,wifi compus to student.<br>
+    Located in Bolar, Mangalore</p>
+</div> 
+<div class ="college">
+    <h3>MSNIM Manel Srinivasa Nayak Institute of Management</h3>
+    <p> MSNIM is a premier management  institute based at the coastal  city of Mangalore.Our institution is an offshoot of the educational movement initiated by the reowned theosophist,social reformer and freedom fighter DR.Annie Besant<br>
+    Located in Bondel Mangalore </p>
+</div>
+<a href="home.html" class="home-button">Home</a>
+</div>    
+</body>
+</html>
